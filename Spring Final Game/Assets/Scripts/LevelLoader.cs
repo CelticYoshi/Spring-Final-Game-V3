@@ -39,7 +39,7 @@ public class LevelLoader : MonoBehaviour
         _itemsCollected += amount;
         _itemsCollectText.text = "Items: " + _itemsCollected.ToString() + "/" + _totalItemsCollected.ToString();
     
-        if(_itemsCollected > _totalItemsCollected)
+        if(_itemsCollected >= _totalItemsCollected)
         {
             StartCoroutine("EndLevel");
         }
