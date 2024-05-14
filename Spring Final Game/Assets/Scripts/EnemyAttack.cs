@@ -8,13 +8,13 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] private EnemyMovement _enemymovement;
     [SerializeField] private PlayerHealth _player;
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
+     void OnTriggerEnter(Collider other)
+     {
+        if(other.gameObject.CompareTag("Player"))
         {
             Debug.Log("I hit the player");
             _enemymovement.EnemyAttack();
             _player.TakeDamage(_damageAmount);
         }
-    }
+     }
 }

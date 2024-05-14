@@ -24,33 +24,34 @@ public class EnemyMovement : MonoBehaviour
         Vector3 movementDirection = (_player.position - transform.position).normalized;
         
         float distance = Vector3.Distance(_player.position, transform.position);
-        Debug.Log("Distance " + distance);
-
+        //Debug.Log("Distance" + distance);
         if(!_isAttacking)
         {
             if(distance < rangeValue)
             {
-            _enemyRb.velocity = movementDirection * speed;
-            transform.LookAt(_player);
-            _enemyAnimation.SetBool("IsMoving", true);
+                _enemyRb.velocity = movementDirection * speed;
+                transform.LookAt(_player);
+                _enemyAnimation.SetBool("IsMoving", true);
             }
             else
             {
-            _enemyAnimation.SetBool("IsMoving", false);
-            _enemyRb.velocity = movementDirection * 0;
+                //_enemyRb.velocity = movementDirection * 0;
+                _enemyAnimation.SetBool("IsMoving", false);
             }
         }
-  
-    }
-    
-    // end Update
+    }// end Update
 
-    void OnCollisionEnter(Collision other)
+    public void EnemyAttack()
     {
-        if(other.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("Enemy hit the player");
-            _isAttacking = true;
-        }
+        _isAttacking = true;
+        _enemyAnimation.SetBool("IsMoving", false);
+        _enemyAnimation.SetTrigger("IsAttacking");
+        StartCoroutine("EnemyAttackCoolDown");
+    }
+
+    IEnumerator EnemyAttackCoolDown()
+    {
+        yield return new WaitForSeconds(1.5f);
+        _isAttacking = false;
     }
 }
