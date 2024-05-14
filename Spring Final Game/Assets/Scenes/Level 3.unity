@@ -10500,7 +10500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6cbae3d3f2974161a2c83c577105168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
   rangeValue: 100000
   _isAttacking: 0
   _player: {fileID: 1610734490}
@@ -10519,7 +10519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damageAmount: 1
-  _enemymovement: {fileID: 247229293}
+  _enemymovement: {fileID: 1079128398}
   _player: {fileID: 1610734492}
 --- !u!1001 &248026386
 PrefabInstance:
@@ -11050,7 +11050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6cbae3d3f2974161a2c83c577105168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
   rangeValue: 100000
   _isAttacking: 0
   _player: {fileID: 1610734490}
@@ -35183,7 +35183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6cbae3d3f2974161a2c83c577105168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
   rangeValue: 100000
   _isAttacking: 0
   _player: {fileID: 1610734490}
@@ -35652,7 +35652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6cbae3d3f2974161a2c83c577105168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
   rangeValue: 100000
   _isAttacking: 0
   _player: {fileID: 1610734490}
@@ -44998,7 +44998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6cbae3d3f2974161a2c83c577105168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
   rangeValue: 100000
   _isAttacking: 0
   _player: {fileID: 1610734490}
@@ -67666,7 +67666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04bc0b071047b4a20a5c8ae01ad6abc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 1
   playerHealthText: {fileID: 240494505}
 --- !u!1001 &1610988913
 PrefabInstance:
