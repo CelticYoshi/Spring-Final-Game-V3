@@ -11,6 +11,7 @@ public class LevelLoader : MonoBehaviour
     [SerializeField] private PlayerHealth _playerHealth;
     [SerializeField] private TextMeshProUGUI _itemsCollectText;
     [SerializeField] private CrossFade _crossFade;
+    [SerializeField] private Timer _timer;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,7 @@ public class LevelLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_playerHealth.GetPlayerHealth() <= 0)
+        if(_playerHealth.GetPlayerHealth() <= 0 || _timer.GetGameTimer() == false)
         {
             StartCoroutine("EndLevel");
         }

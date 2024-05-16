@@ -45,6 +45,11 @@ public class Timer : MonoBehaviour
         _isTimerRunning = false;
     }
 
+    public bool GetGameTimer()
+    {
+        return _isTimerRunning;
+    }
+
     public float GetTimeRemaining()
     {
         return timeRemaining;

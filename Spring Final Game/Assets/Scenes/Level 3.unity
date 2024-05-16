@@ -10350,6 +10350,7 @@ MonoBehaviour:
   _playerHealth: {fileID: 1610734492}
   _itemsCollectText: {fileID: 1332916463}
   _crossFade: {fileID: 245926984}
+  _timer: {fileID: 245926986}
 --- !u!114 &245926986
 MonoBehaviour:
   m_ObjectHideFlags: 0
