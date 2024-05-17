@@ -36,6 +36,8 @@ public class LevelSelect : MonoBehaviour
             levelButtons[i].interactable = true;
             AssignOnButtonClick(i);
         }
+
+        Cursor.lockState = CursorLockMode.None;
     }
     private void AssignOnButtonClick(int number)
     {
