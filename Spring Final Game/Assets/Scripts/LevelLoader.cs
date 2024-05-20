@@ -11,11 +11,13 @@ public class LevelLoader : MonoBehaviour
     [SerializeField] private PlayerHealth _playerHealth;
     [SerializeField] private TextMeshProUGUI _itemsCollectText;
     [SerializeField] private CrossFade _crossFade;
+    [SerializeField] private string _sceneName;
     [SerializeField] private Timer _timer;
 
     // Start is called before the first frame update
     void Start()
     {
+        _sceneName = SceneManager.GetActiveScene().name;
         _itemsCollectText.text = "Items: " + _itemsCollected.ToString() + "/" + _totalItemsCollected.ToString();
     }
 
@@ -42,7 +44,21 @@ public class LevelLoader : MonoBehaviour
     
         if(_itemsCollected >= _totalItemsCollected)
         {
+            GameManager.Instance.CompletedLevel(_sceneName);
             StartCoroutine("EndLevel");
         }
+
+        if(_itemsCollected >= _totalItemsCollected && _sceneName == "Level 3")
+        {
+            StartCoroutine("YouWonGame");
+        }
+    }
+
+    IEnumerator YouWonGame()
+    {
+        Debug.Log("YouWonGame");
+        _crossFade.FadeIn();
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("You Won");
     }
 }
