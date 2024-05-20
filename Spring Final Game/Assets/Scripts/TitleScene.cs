@@ -8,6 +8,11 @@ public class TitleScene : MonoBehaviour
 {
     public int startingScene;
 
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     public void OnPlayButtonPressed()
     {
         SceneManager.LoadScene(startingScene);
