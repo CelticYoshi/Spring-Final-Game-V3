@@ -44,8 +44,8 @@ public class LevelLoader : MonoBehaviour
     
         if(_itemsCollected >= _totalItemsCollected)
         {
-            GameManager.Instance.CompletedLevel(_sceneName);
-            StartCoroutine("EndLevel");
+            if(_sceneName == "Level 3")
+            StartCoroutine("YouWonGame");
         }
 
         if(_itemsCollected >= _totalItemsCollected && _sceneName == "Level 3")
