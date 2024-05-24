@@ -10557,7 +10557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  rangeValue: 100000
+  rangeValue: 1000000
   _isAttacking: 0
   _player: {fileID: 1610734490}
   _enemyAnimation: {fileID: 1868494118}
@@ -11107,7 +11107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  rangeValue: 100000
+  rangeValue: 1000000
   _isAttacking: 0
   _player: {fileID: 1610734490}
   _enemyAnimation: {fileID: 357229331}
@@ -35294,7 +35294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  rangeValue: 100000
+  rangeValue: 1000000
   _isAttacking: 0
   _player: {fileID: 1610734490}
   _enemyAnimation: {fileID: 1812011315}
@@ -35764,7 +35764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  rangeValue: 100000
+  rangeValue: 1000000
   _isAttacking: 0
   _player: {fileID: 1610734490}
   _enemyAnimation: {fileID: 1860840423}
@@ -45111,7 +45111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  rangeValue: 100000
+  rangeValue: 1000000
   _isAttacking: 0
   _player: {fileID: 1610734490}
   _enemyAnimation: {fileID: 87125637}
